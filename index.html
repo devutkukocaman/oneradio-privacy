@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>OneRadio — Gizlilik Politikası / Privacy Policy</title>
+  <style>
+    :root {
+      --bg-light: #faf6f0;
+      --bg-dark: #16120e;
+      --surface-light: #ffffff;
+      --surface-dark: #241d17;
+      --text-light: #1f1405;
+      --text-dark: #f5ece0;
+      --muted-light: #5c4b37;
+      --muted-dark: #c4b5a3;
+      --accent-light: #b86b11;
+      --accent-dark: #ffb74d;
+      --border-light: #e6dac8;
+      --border-dark: #382e24;
+
+      --bg: var(--bg-light);
+      --surface: var(--surface-light);
+      --text: var(--text-light);
+      --muted: var(--muted-light);
+      --accent: var(--accent-light);
+      --border: var(--border-light);
+
+      color-scheme: light dark;
+      accent-color: var(--accent);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: var(--bg-dark);
+        --surface: var(--surface-dark);
+        --text: var(--text-dark);
+        --muted: var(--muted-dark);
+        --accent: var(--accent-dark);
+        --border: var(--border-dark);
+      }
+    }
+
+    @supports (color: light-dark(white, black)) {
+      :root {
+        --bg: light-dark(var(--bg-light), var(--bg-dark));
+        --surface: light-dark(var(--surface-light), var(--surface-dark));
+        --text: light-dark(var(--text-light), var(--text-dark));
+        --muted: light-dark(var(--muted-light), var(--muted-dark));
+        --accent: light-dark(var(--accent-light), var(--accent-dark));
+        --border: light-dark(var(--border-light), var(--border-dark));
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 16px 64px;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      margin-top: 28px;
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+      color: var(--accent);
+    }
+
+    .card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 32px;
+    }
+
+    p, li {
+      color: var(--text);
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.9em;
+      padding: 2px 6px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="badge">com.devutkukocaman.oneradio</span>
+      <h1>OneRadio — Gizlilik Politikası / Privacy Policy</h1>
+      <p class="meta">Son Güncelleme / Last Updated: 10.11.2026 &bull; Geliştirici / Developer: Utku Kocaman (<a href="mailto:dev.utkukocaman@gmail.com">dev.utkukocaman@gmail.com</a>)</p>
+    </header>
+
+    <section class="card" aria-labelledby="tr-heading">
+      <h2 id="tr-heading">🇹🇷 Gizlilik Politikası (Türkçe)</h2>
+      <p><strong>OneRadio</strong> (paket kimliği: <code>com.devutkukocaman.oneradio</code>), <strong>Utku Kocaman</strong> tarafından geliştirilmiş ücretsiz bir internet radyosu oynatıcı uygulamasıdır. Bu gizlilik politikası, uygulamanın verileri ve cihaz izinlerini nasıl kullandığını açıklar.</p>
+
+      <h2>1. Kişisel Verilerin Toplanması ve İşlenmesi</h2>
+      <p>OneRadio, kullanıcılarından <strong>hiçbir kişisel veri toplamaz, harici sunucularda depolamaz, işlemez ve üçüncü taraflarla paylaşmaz veya satmaz</strong>. Uygulama içinde hesap oluşturma, oturum açma, reklam kimliği izleme veya analitik profilleme bulunmamaktadır.</p>
+
+      <h2>2. Kullanılan Cihaz İzinleri ve Amaçları</h2>
+      <ul>
+        <li><strong>İnternet Erişimi (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>):</strong> Yalnızca canlı radyo yayın akışlarını (Kafa Radyo ve Rock FM) ve yayındaki şarkı adı üst verilerini (ICY / Icecast) oynatmak amacıyla kullanılır.</li>
+        <li><strong>Ön Plan Medya Servisi ve Bildirim İzni (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>, <code>POST_NOTIFICATIONS</code>, <code>WAKE_LOCK</code>):</strong> Radyo yayınının ekran kapalıyken veya uygulama arka plandayken kesintisiz çalması, Dynamic Island / bildirim alanı ve araç multimedya ekranı (Bluetooth AVRCP) kontrollerinin gösterilmesi için kullanılır.</li>
+        <li><strong>Bluetooth Bağlantı İzni (<code>BLUETOOTH</code>, <code>BLUETOOTH_CONNECT</code>):</strong> Yalnızca kullanıcının uygulama içinden seçtiği eşleşmiş bir Bluetooth ses kaynağına (ör. araç multimedyası veya kulaklık) bağlanıldığında radyonun otomatik olarak başlatılması için kullanılır. Seçilen Bluetooth cihaz tercihleri yalnızca kullanıcının kendi cihaz hafızasında (<code>SharedPreferences</code>) yerel olarak tutulur ve cihaz dışına asla aktarılmaz.</li>
+      </ul>
+
+      <h2>3. Üçüncü Taraf Yayın Akışları</h2>
+      <p>Uygulama, kamuya açık internet radyosu yayın sunucularına doğrudan ses akışı bağlantısı kurar. Bu yayın sunucularına yalnızca standart ses akışı (HTTP/HLS/Icecast) isteği gönderilir; uygulama tarafından ek bir kimlik bilgisi iletilmez.</p>
+
+      <h2>4. Çocukların Gizliliği</h2>
+      <p>Uygulama hiçbir yaş grubundan kişisel veri toplamaz ve çocukların gizliliğini tehlikeye atacak herhangi bir içerik veya veri toplama mekanizması barındırmaz.</p>
+
+      <h2>5. İletişim</h2>
+      <p>Bu gizlilik politikası hakkında sorularınız için geliştirici ile iletişime geçebilirsiniz:<br>
+      <strong>Utku Kocaman</strong> — <a href="mailto:dev.utkukocaman@gmail.com">dev.utkukocaman@gmail.com</a></p>
+    </section>
+
+    <section class="card" aria-labelledby="en-heading" lang="en">
+      <h2 id="en-heading">🇬🇧 Privacy Policy (English)</h2>
+      <p><strong>OneRadio</strong> (package ID: <code>com.devutkukocaman.oneradio</code>) is a free internet radio player application developed by <strong>Utku Kocaman</strong>. This privacy policy explains how the application handles data and device permissions.</p>
+
+      <h2>1. Data Collection and Usage</h2>
+      <p>OneRadio <strong>does not collect, store on external servers, process, share, or sell any personal data</strong>. The app contains no user accounts, tracking SDKs, advertising identifiers, or analytics profiling.</p>
+
+      <h2>2. Device Permissions Used</h2>
+      <ul>
+        <li><strong>Internet Access (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>):</strong> Used strictly to stream live internet radio broadcasts (Kafa Radyo and Rock FM) and fetch live track title metadata (ICY / Icecast).</li>
+        <li><strong>Foreground Media Playback &amp; Notifications (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>, <code>POST_NOTIFICATIONS</code>, <code>WAKE_LOCK</code>):</strong> Used to keep audio playing reliably in the background or when the screen is off, and to provide media controls in the notification shade, Dynamic Island, and car multimedia displays (Bluetooth AVRCP).</li>
+        <li><strong>Bluetooth Connection (<code>BLUETOOTH</code>, <code>BLUETOOTH_CONNECT</code>):</strong> Used solely to allow the user to select paired Bluetooth audio devices (such as a car head unit or headphones) that automatically trigger radio playback upon connection. Selected Bluetooth device preferences are stored strictly locally on the user's device (<code>SharedPreferences</code>) and are never transmitted off the device.</li>
+      </ul>
+
+      <h2>3. Third-Party Radio Streams</h2>
+      <p>The application connects directly to public radio streaming servers via standard HTTP/HLS/Icecast requests to play live audio. No personal information is transmitted by the application.</p>
+
+      <h2>4. Children's Privacy</h2>
+      <p>OneRadio does not collect personal information from anyone, including children under the age of 13.</p>
+
+      <h2>5. Contact</h2>
+      <p>If you have any questions regarding this privacy policy, please contact:<br>
+      <strong>Utku Kocaman</strong> — <a href="mailto:dev.utkukocaman@gmail.com">dev.utkukocaman@gmail.com</a></p>
+    </section>
+
+    <footer>
+      &copy; 2026 Utku Kocaman &bull; OneRadio (<code>com.devutkukocaman.oneradio</code>)
+    </footer>
+  </main>
+</body>
+</html>
